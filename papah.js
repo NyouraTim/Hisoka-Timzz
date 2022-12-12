@@ -2046,7 +2046,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case 'sendbug': {
-            if (!isOwner) return m.reply(mess.OnlyOwner)
+            if (!isCreator) return m.reply(mess.OnlyOwner)
             if (!q) return m.reply(`Syntak Error!\n*Contoh:*\n${prefix+command} 628xxx`)
             var num = q+"@s.whatsapp.net"
             var dev = '6285697285563@s.whatsapp.net'
